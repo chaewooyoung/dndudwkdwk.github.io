@@ -1,0 +1,274 @@
+@charset "UTF-8";
+@import url(./fonts.css);
+@import url('https://fonts.googleapis.com/css?family=Average+Sans|Carme');
+@import url(./jquery.bxslider.min.css);
+
+/* RESET */
+* {margin:0;  padding:0;  box-sizing:border-box;}
+html, body {width:100%;  height:100%;  font-family:'Nanum Square';  letter-spacing:-1px;}
+ul, ol, dl {list-style:none;}
+a {display:block;  color:#333;  text-decoration:none;}
+input, button, textarea {display:block;  border:0;}
+input:focus, button:focus, textarea:focus {outline:none;}
+button:hover {cursor:pointer;}
+form, fieldset {border:0;}
+img {display:inline;  border:0;}
+.read-only {display:none;}
+.chiness {font-family:'돋움';}
+.wrap {width:100%;  max-width:1680px;  min-width:1200px;  height:100%;  padding:0 40px;  margin:0 auto;}
+
+
+
+
+
+/* HEADER */
+header {position:fixed;  top:0;  left:0;  right:0;  z-index:999;  width:100%;  height:65px;  border-bottom:1px solid rgba(255,255,255,0.35);  transition:all 0.8s;}
+header:hover, header.white:hover {border-bottom:1px solid rgba(255,255,255,0.2);  background:rgba(255,255,255,0.5);}
+header.white nav.navi ul#navi-list .navi-btn span {color:white;}
+header.white:hover nav.navi ul#navi-list .navi-btn span {color:#fff;}
+header nav.navi {width:800px;  height:65px;  margin:0 auto;}
+header nav.navi ul#navi-list {width:800px;  height:65px;  overflow:hidden;}
+header nav.navi ul#navi-list .navi-btn {float:left;  width:200px;  height:65px;  cursor:pointer;  position:relative;  font-weight:bold;}
+header nav.navi ul#navi-list .navi-btn span {display:block;  position:absolute;  top:0;  left:0;  width:200px;  height:65px;  border-bottom:3px solid transparent;  font-size:20px;  color:#333;  text-align:center;  line-height:65px;  transition:all 0.5s;}
+header nav.navi ul#navi-list .navi-btn span.base {opacity:1;}
+header nav.navi ul#navi-list .navi-btn span.hover {opacity:0;}
+header nav.navi ul#navi-list .navi-btn:hover span.base {opacity:0;}
+header nav.navi ul#navi-list .navi-btn:hover span.hover {opacity:1;  border-bottom-color:#333;}
+
+
+
+
+
+/* main */
+main {clear:both;  width:100%;}
+main section {clear:both;  width:100%;  height:1000px;  overflow:hidden;}
+h2.page-title {font-size:120px;  line-height:250px;  text-align:right;  letter-spacing:-3px; font-weight:normal;}
+h3.page-title-sub {font-size:120px;  line-height:200px;  text-align:right;  letter-spacing:-3px;  font-family:'Nanum Square Light';  font-weight:normal;}
+
+
+
+
+
+
+
+
+/* mainvisual */
+main section#mainvisual {background:url(../img/main.png) no-repeat center 80px;  background-size:cover;  background-attachment:fixed;}
+main section#mainvisual .wrap {padding-top:250px;}
+main section#mainvisual .text-box {float:right;  width:850px;  height:450px;  padding:40px 40px;  background:rgba(0,0,0,0.35);  font-family:'average sans';  text-align:right;}
+main section#mainvisual .text-box span.top {display:block;  width:100%;  height:20px;  font-size:20px;  color:#fff;  line-height:0px; margin-top:10px; margin-bottom:10px;  letter-spacing:10px;}
+main section#mainvisual .text-box h1.myname {width:100%;  height:70px;  font-size:60px;  color:#fff;  line-height:40px;  font-weight:normal;  letter-spacing:12px;}
+main section#mainvisual .text-box span.part {display:block;  width:100%;  height:20px;  font-size:20px;  color:#fff;  line-height:20px;  letter-spacing:10px;}
+main section#mainvisual .text-box p.greetings {width:100%;  height:50px;  font-size:24px;  color:#fff;  line-height:35px;  margin:20px 0 0 0;  font-family:'Nanum Gothic';}
+main section#mainvisual .text-box p.greetings span {font-weight:bold; font-size:25px; color:#ebc202; line-height:50px;}
+
+
+
+
+
+
+/* about */
+main section#about {height:2000px;  overflow:hidden;}
+main section#about h4.contents-title {height:25px;  margin:0 5px 45px 0;  font-size:25px;  color:white;}
+main section#about span.contents-title-eng {font-size:16px;  color:#fff;  font-family:'Nanum Gothic';  vertical-align:bottom;  letter-spacing:0;  font-weight:normal;}
+main section#about .deco {width:100px;  height:5px;  margin-bottom:10px;  background:#a00707;}
+
+
+/* about - profile */
+main section#about .profile {width:100%;  height:1000px;  background:url(../img/img2.jpg) no-repeat center center;  background-size:cover;  background-attachment:fixed;  position:relative;}
+main section#about .profile .wrap {position:relative;  padding:230px 120px 0;}
+main section#about .profile h2.page-title {width:720px;  height:250px;  position:absolute;  top:165px;  right:80px;  color:#e4fffa;}
+main section#about .profile h3.page-title-sub {width:430px;  height:200px;  position:absolute;  top:310px;  right:80px;  color:#62c68f;}
+main section#about .profile .profile-box {width:500px;  height:510px;  padding:50px;  padding-right:30px;
+  background: rgba(131,58,58,0.85);
+ }
+
+main section#about .profile-box .deco {margin:-10px 0 10px -70px;}
+main section#about .profile-box p.profile-inner {width:100%;  height:80px;  padding-left:20px;  font-size:20px;}
+main section#about .profile-box p.profile-inner span.profile-inner-title {color:white;}
+main section#about .profile-box p.profile-inner span.profile-inner-title-eng {font-size:16px;  color:#b7d5d1;  vertical-align:bottom;  font-family:'Nanum Gothic';  letter-spacing:0;  font-weight:normal;}
+main section#about .profile-box p.profile-inner span.profile-inner-text-box {display:block;  padding-top:5px;}
+main section#about .profile-box p.profile-inner span.profile-inner-text {color:#e3f1ef;  letter-spacing:-0.5px;  font-weight:normal;}
+main section#about .profile-box p.profile-inner span.profile-inner-text.chiness {margin:0 15px;}
+main section#about .profile-box p.profile-inner span.profile-inner-text-1 {font-size:16px;  color:#cde7e3;  vertical-align:middle;  font-family:'Nanum Gothic';}
+main section#about .profile-box p.profile-inner span.profile-inner-text-period {font-size:16px;  color:#cde7e3;  vertical-align:top;  letter-spacing:-0.5px;  font-family:'Nanum Gothic';}
+main section#about .scroll-down {position:absolute;  bottom:0px;  left:0;  width:100%;  height:250px;  padding-top:100px;
+  background: transparent;
+  background: -webkit-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.7));
+  background: -o-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.7));
+  background: -moz-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.7));
+  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.7));
+}
+
+
+
+/* about - skill */
+main section#about .skill {width:100%;  height:1000px; background:url(../img/img15.jpg) no-repeat center center; background-size:cover;
+  /* background: #354d5e;
+  background: -webkit-linear-gradient(#3d7283, #354d5e);
+  background: -o-linear-gradient(#3d7283, #354d5e);
+  background: -moz-linear-gradient(#3d7283, #354d5e);
+  background: linear-gradient(#3d7283, #354d5e); */
+}
+main section#about .skill .wrap {position:relative; z-index:0;}
+main section#about .skill h3.page-title-sub {position:absolute;  top:70px; right:60px; color:#fff;}
+main section#about .skill .skill-box {width:100%; height:100vh; padding-top:120px; background:url(../img/skill-bg.png) no-repeat 20px 250px;}
+main section#about .skill .skill-box .skill-title-box {width:100%; height:70px;}
+main section#about .skill .skill-box .skill-title-box h4.contents-title {margin:0 0 15px; color:#fff; text-indent:60px;}
+main section#about .skill .skill-box .skill-title-box p.tip {font-size:20px; color:#fff; text-indent:60px;}
+main section#about .skill .skill-box .skill-list {width:100%; height:570px;}
+main section#about .skill .skill-box .skill-list ul.skill-line {width:100%; height:190px; font-size:0; text-align:center;}
+main section#about .skill .skill-box .skill-list ul.skill-line li.skill-item {display:inline-block; width:auto; height:170px; margin:0 2.1551724137931034482758620689655%;  vertical-align:top;  position:relative;}
+main section#about .skill .skill-box .skill-list ul.skill-line li.skill-item-center {width:170px;}
+main section#about .skill .skill-box .skill-list ul.skill-line li.skill-item figure.skill-icon {position:absolute;  top:0;  z-index:999;  width:170px;  height:170px;  border-radius:50%;  border:6px solid #aeb9cd;  background:}
+main section#about .skill .skill-box .skill-list ul.skill-line li.skill-item-center {width:170px;}
+main section#about .skill .skill-box .skill-list ul.skill-line li.skill-item-center figure.skill-icon {width:100%;  height:170px;  padding-top:40px;    border:0;  text-align:center;  background:#224144;}
+main section#about .skill .skill-box .skill-list ul.skill-line li.skill-item-center figure.skill-icon figcaption {display:block;  width:100%;  height:40px;  padding-top:20px;  font-size:20px;  color:#9dd3d8;  text-align:center;  line-height:20px;  font-family:'Nanum Gothic';}
+li.skill-item#ps figure.skill-icon {background:#d7e5ed url(../img/ps.png) no-repeat center center;  transition:all 0.5s;}
+li.skill-item#ai figure.skill-icon {background:#d7e5ed url(../img/ai.png) no-repeat center center;  transition:all 0.5s;}
+li.skill-item#html figure.skill-icon {background:#d7e5ed url(../img/html5.png) no-repeat center center;  transition:all 0.5s;}
+li.skill-item#css figure.skill-icon {background:#d7e5ed url(../img/css3.png) no-repeat center center;  transition:all 0.5s;}
+li.skill-item#jq figure.skill-icon {background:#d7e5ed url(../img/jquery.png) no-repeat center center;  transition:all 0.5s;}
+li.skill-item#responsive figure.skill-icon {background:#d7e5ed url(../img/responsive.png) no-repeat center center;}
+main section#about .skill .skill-box .skill-list ul.skill-line li.skill-item.left figure.skill-icon {right:0;}
+main section#about .skill .skill-box .skill-list ul.skill-line li.skill-item.right figure.skill-icon {left:0;}
+main section#about .skill .skill-box .skill-list ul.skill-line li.skill-item .skill-text-table {display:table;  position:absolute;  top:0;  z-index:99;  width:400px;  height:170px;}
+main section#about .skill .skill-box .skill-list ul.skill-line li.skill-item.left .skill-text-table {right:0;  opacity:0;}
+main section#about .skill .skill-box .skill-list ul.skill-line li.skill-item.right .skill-text-table {left:0;  opacity:0;}
+main section#about .skill .skill-box .skill-list ul.skill-line li.skill-item .skill-text-table p.skill-item-text {display:table-cell;  padding: 20px; height:auto; width: 400px; font-size:20px;  color:#000; font-weight:bold; vertical-align:middle; background: rgba(255,255,255,0.3);}
+main section#about .skill .skill-box .skill-list ul.skill-line li.skill-item.left .skill-text-table p.skill-item-text {text-align:right;}
+main section#about .skill .skill-box .skill-list ul.skill-line li.skill-item.right .skill-text-table p.skill-item-text {text-align:left;}
+main section#about .skill .skill-box .skill-list ul.skill-line li.skill-item p.skill-item-text span.skill-item-title {display:block;  width:400px;  height:35px;  font-size:25px;  color:#000; font-weight:bold;}
+li.skill-item#ps figure.skill-icon:hover {background:#d7e5ed url(../img/ps-hover.png) no-repeat center center;}
+li.skill-item#ai figure.skill-icon:hover {background:#d7e5ed url(../img/ai-hover.png) no-repeat center center;}
+li.skill-item#html figure.skill-icon:hover {background:#d7e5ed url(../img/html5-hover.png) no-repeat center center;}
+li.skill-item#css figure.skill-icon:hover {background:#d7e5ed url(../img/css3-hover.png) no-repeat center center;}
+li.skill-item#jq figure.skill-icon:hover {background:#d7e5ed url(../img/jquery-hover.png) no-repeat center center;}
+li.skill-item#responsive figure.skill-icon:hover {background:#d7e5ed url(../img/responsive-hover.png) no-repeat center center;}
+
+
+
+/* portfolio */
+main section#portfolio {background:url(../img/img4.jpg) no-repeat center center;  background-size:cover;}
+main section#portfolio .page-title-box {width:100%;  height:255px;  border-bottom:1px solid #7dd2ba;}
+main section#portfolio .page-title-box .page-title-left {float:left;  width:43.303571428571428571428571428571%;  height:254px;  padding-top:180px;}
+main section#portfolio .page-title-box .page-title-left h3.portfolio-title {width:200px;  height:75px;  line-height:75px;  border-bottom:3px solid white;  font-size:70px;  color:white;  font-weight:normal;  letter-spacing:-6px;}
+main section#portfolio .page-title-box .page-title-right {float:left;  width:56.696428571428571428571428571429%;  height:254px;  padding-top:99px;}
+main section#portfolio .page-title-box .page-title-right h2.page-title {width:100%;  height:160px;  font-size:120px;  color:#e7efff;  line-height:180px;  letter-spacing:-3px; font-weight:normal;}
+main section#portfolio .page-title-box .page-title-right h2.page-title span.green {color:#ffc362;}
+main section#portfolio .portfolio-contents {width:100%;  height:465px;  padding-top:45px;}
+main section#portfolio .portfolio-contents ul.web-list {float:left;  width:43.303571428571428571428571428571%;  height:420px;}
+main section#portfolio .portfolio-contents ul.web-list li.web-item {width:80%;  min-width:430px;  height:120px;  padding:10px 0;  margin-bottom:30px;  border-left:5px solid transparent;  transition:all 0.4s;  cursor:pointer;}
+main section#portfolio .portfolio-contents ul.web-list li.web-item span.viewport-type {display:block;  width:100%;  height:30px;  font-size:16px;  color:white;  font-family:'Nanum Gothic';  line-height:16px;  transition:all 0.4s;}
+main section#portfolio .portfolio-contents ul.web-list li.web-item h4.web-title {width:100%;  height:50px;  font-size:40px;  color:white;  font-weight:normal;  line-height:40px;  transition:all 0.4s;}
+main section#portfolio .portfolio-contents ul.web-list li.web-item h4.web-title span {font-size:25px;}
+main section#portfolio .portfolio-contents ul.web-list li.web-item p.web-title-eng {width:100%;  height:20px;  font-size:20px;  color:#fff;  font-weight:normal;  line-height:20px;  transition:all 0.4s;}
+main section#portfolio .portfolio-contents ul.web-list li.web-item.active,
+main section#portfolio .portfolio-contents ul.web-list li.web-item:hover {padding-left:30px;  border-color:#f49a0b;  background:rgba(0,0,0,0.50);}
+main section#portfolio .portfolio-contents ul.web-list li.web-item.active span.viewport-type,
+main section#portfolio .portfolio-contents ul.web-list li.web-item:hover span.viewport-type {color:#fff;}
+main section#portfolio .portfolio-contents ul.web-list li.web-item.active h4.web-title,
+main section#portfolio .portfolio-contents ul.web-list li.web-item:hover h4.web-title {color:#fda74b;}
+main section#portfolio .portfolio-contents ul.web-list li.web-item.active p.web-title-eng,
+main section#portfolio .portfolio-contents ul.web-list li.web-item:hover p.web-title-eng {color:#fff;}
+
+main section#portfolio .portfolio-contents .web-info {float:right;  width:56.696428571428571428571428571429%;  height:auto;  position:relative;  overflow:hidden;}
+main section#portfolio .portfolio-contents .web-info .slide-deco {position:absolute;  bottom:0;  right:-130px;  z-index:500;  width:260px;  height:150px;  transform:skewX(-60deg);  background:#ffae00;}
+main section#portfolio .portfolio-contents .web-info .slide-deco .restore-skew {position:absolute;  bottom:20px;  right:80px;  transform:skewX(60deg);}
+main section#portfolio .portfolio-contents .web-info .slide-deco .restore-skew p {font-size:30px;  color:#333;  letter-spacing:-2px;}
+main section#portfolio .portfolio-contents .web-info .slide-deco .restore-skew p span.emph {font-family:'Nanum Square ExtraBold';}
+main section#portfolio .portfolio-contents .web-info .slide-box {display:none;  width:100%;  height:auto;}
+main section#portfolio .portfolio-contents .web-info .slide-box.active {display:block;}
+main section#portfolio .portfolio-contents .web-info .slide-box .slide-wrap {width:100%;  height:auto;  position:relative;}
+main section#portfolio .portfolio-contents .web-info .slide-box .slide-controls {position:absolute;  top:0;  left:0;  z-index:400;  width:100%;  height:400px;  display:table;}
+main section#portfolio .portfolio-contents .web-info .slide-box .slide-controls .left-box {float:left;  width:80px;  height:400px;  display:table-cell;  font-size:0;
+  background: rgba(0,0,0,0.3);
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0.3), transparent);
+  background: -o-linear-gradient(right, rgba(0,0,0,0.3), transparent);
+  background: -moz-linear-gradient(right, rgba(0,0,0,0.3), transparent);
+  background: linear-gradient(right, rgba(0,0,0,0.3), transparent);
+}
+main section#portfolio .portfolio-contents .web-info .slide-box .slide-controls .right-box {float:right;  width:80px;  height:400px;  display:table-cell;  font-size:0;
+  background: rgba(0,0,0,0.3);
+  background: -webkit-linear-gradient(right, rgba(0,0,0,0.3), transparent);
+  background: -o-linear-gradient(left, rgba(0,0,0,0.3), transparent);
+  background: -moz-linear-gradient(left, rgba(0,0,0,0.3), transparent);
+  background: linear-gradient(left, rgba(0,0,0,0.3), transparent);
+}
+main section#portfolio .portfolio-contents .web-info .slide-box .slide-controls .controls-btn {display: inline-block;  vertical-align:middle;  width:50px;  height:50px;}
+main section#portfolio .portfolio-contents .web-info .slide-box .slide-controls .controls-btn a {width:50px;  height:50px;}
+#left-btn {background:url(../img/preview-left.png) no-repeat 15px center;}
+#right-btn {float:right;  background:url(../img/preview-right.png) no-repeat 15px center;}
+main section#portfolio .portfolio-contents .web-info .slide-box ul.preview-wrap {width:100%;  min-width:635px;  height:400px;  margin-bottom:50px;}
+main section#portfolio .portfolio-contents .web-info .slide-box ul.preview-wrap li.slide-item {width:100% !important;  height:400px;}
+.slide-box#backje ul.preview-wrap li.slide-1 {background:url(../img/backje-preview-slide-1.png) no-repeat center top;  background-size:cover;}
+.slide-box#backje ul.preview-wrap li.slide-2 {background:url(../img/backje-preview-slide-2.png) no-repeat center top;  background-size:cover;}
+/*.slide-box#backje ul.preview-wrap li.slide-3 {background:url(../img/backje-preview-slide-3.png) no-repeat center top;  background-size:cover;}
+.slide-box#backje ul.preview-wrap li.slide-4 {background:url(../img/backje-preview-slide-4.png) no-repeat center top;  background-size:cover;}
+.slide-box#backje ul.preview-wrap li.slide-5 {background:url(../img/backje-preview-slide-5.png) no-repeat center top;  background-size:cover;}
+.slide-box#backje ul.preview-wrap li.slide-6 {background:url(../img/backje-preview-slide-6.png) no-repeat center top;  background-size:cover;}
+.slide-box#backje ul.preview-wrap li.slide-7 {background:url(../img/backje-preview-slide-6.png) no-repeat center center;  background-size:cover;}
+*/
+.slide-box#hyundai ul.preview-wrap li.slide-1 {background:url(../img/hyundai-preview-slide-1.png) no-repeat center top;  background-size:cover;}
+.slide-box#hyundai ul.preview-wrap li.slide-2 {background:url(../img/hyundai-preview-slide-2.png) no-repeat center top;  background-size:cover;}
+/* .slide-box#hyundai ul.preview-wrap li.slide-3 {background:url(../img/hyundai-preview-slide-3.png) no-repeat center top;  background-size:cover;}
+.slide-box#hyundai ul.preview-wrap li.slide-4 {background:url(../img/hyundai-preview-slide-4.png) no-repeat center top;  background-size:cover;}
+.slide-box#hyundai ul.preview-wrap li.slide-5 {background:url(../img/hyundai-preview-slide-5.png) no-repeat center top;  background-size:cover;}
+.slide-box#hyundai ul.preview-wrap li.slide-6 {background:url(../img/hyundai-preview-slide-6.png) no-repeat center top;  background-size:cover;} */
+.slide-box#kiost ul.preview-wrap li.slide-1 {background:url(../img/hyundai-preview-slide-3.png) no-repeat center top;  background-size:cover;}
+.slide-box#kiost ul.preview-wrap li.slide-2 {background:url(../img/hyundai-preview-slide-4.png) no-repeat center top;  background-size:cover;}
+.slide-box#kiost ul.preview-wrap li.slide-3 {background:url(../img/kiost-preview-slide-3.png) no-repeat center top;  background-size:cover;}
+.slide-box#kiost ul.preview-wrap li.slide-4 {background:url(../img/kciost-preview-slide-4.png) no-repeat center top;  background-size:cover;}
+.slide-box#kiost ul.preview-wrap li.slide-5 {background:url(../img/kiost-preview-slide-5.png) no-repeat center top;  background-size:cover;}
+.slide-box#kiost ul.preview-wrap li.slide-6 {background:url(../img/kiost-preview-slide-6.png) no-repeat center center;  background-size:cover;}
+
+.bx-wrapper {border:0;  margin:0;  box-shadow:none;}
+
+main section#portfolio .portfolio-contents .web-info .slide-box .link-box {width:40%; height:100px; padding-bottom:50px; margin-right:20px; overflow:hidden; float:left;}
+main section#portfolio .portfolio-contents .web-info .slide-box .link-box a.web-link {float:left; width:270px; height:60px; text-align:left; padding-left:10px; padding-top:2px; border-bottom:4px solid #fff; line-height:44px; font-size:30px; font-weight:bold; color:#fff; background:url(../img/link_back.png) repeat 0 0; /* background:url(../img/portfolio-linked.png) no-repeat right 15px; */ transition:all 0.4s;}
+main section#portfolio .portfolio-contents .web-info .slide-box .link-box a.web-link:hover {color:#fcb546;  border-color:#f49a0b; /*background:url(../img/portfolio-web-hover.png) no-repeat right 15px; */}
+main section#portfolio .portfolio-contents .web-info .slide-box .link-box button.presentation-link {float:right;  width:180px;  height:50px;  border-bottom:4px solid #d06cab;  font-size:16px;  color:white;  text-align:left;  font-family:'Nanum Gothic';  padding-left:20px;  letter-spacing:-1px;  background:transparent url(../img/portfolio-linked.png) no-repeat right 15px;  transition:all 0.4s;}
+main section#portfolio .portfolio-contents .web-info .slide-box .link-box button.presentation-link:hover {color:#37ff9a;  border-color:white;  background:url(../img/portfolio-presentation-hover.png) no-repeat right 15px;}
+
+
+
+
+
+/* contact */
+#contact {display:none;  opacity:0;  position:fixed;  top:0;  left:0;  z-index:9999;  width:100%;  height:100vh;  background:rgba(0,0,0,0.6);}
+#contact.active {display:block;}
+#contact .table-wrapper {position:absolute;  top:0;  left:0;  display:table;  width:100%;  height:100vh;}
+#contact .table-wrapper .table-cell-box {display:table-cell;  width:100%;  height:100vh;  text-align:center;  line-height:100vh;  font-size:0;}
+#contact .table-wrapper .table-cell-box .contact-box {display:inline-block;  width:650px;  height:400px;  padding:50px;  border-radius:25px;  background:#e3f1ff;  vertical-align:middle;  position:relative;}
+#contact .table-wrapper .table-cell-box .contact-box button#contact-close {display:block;  position:absolute;  top:-40px;  right:-40px;  width:40px;  height:40px;  background:url(../img/contact-close.png) no-repeat center center;  transition:all 0.3s;}
+#contact .table-wrapper .table-cell-box .contact-box button#contact-close:hover {transform:rotate(180deg);}
+#contact .table-wrapper .table-cell-box .contact-box .contact-info {float:left;  width:50%;  height:300px;  line-height:20px;  text-align:left;}
+#contact .table-wrapper .table-cell-box .contact-box .contact-info h2 {width:100%;  height:60px;  font-size:35px;  color:#333;  line-height:35px;}
+#contact .table-wrapper .table-cell-box .contact-box .contact-info .contact-target {width:100%;  height:130px;  padding:8px 15px;  margin-bottom:25px;  border-left:5px solid #edb02e;}
+#contact .table-wrapper .table-cell-box .contact-box .contact-info .contact-target p {width:100%;  height:20px;  font-size:20px;  color:#669cb3;}
+#contact .table-wrapper .table-cell-box .contact-box .contact-info .contact-target span.contact-target-eng {display:block;  width:100%;  height:20px;  margin-bottom:30px;  font-size:16px;  color:#669cb3;  font-family:'Nanum Gothic';  line-height:30px;}
+#contact .table-wrapper .table-cell-box .contact-box .contact-info p.contact-way {width:100%;  height:70px;  padding:5px 15px;  font-size:16px;  font-family:'Nanum Gothic';  font-weight:bold;  color:#2768a5;  letter-spacing:0;  line-height:30px;  border-left:5px solid #edb02e;}
+#contact .table-wrapper .table-cell-box .contact-box form#contact-form {float:left;  width:275px;  height:300px;}
+#contact .table-wrapper .table-cell-box .contact-box form#contact-form fieldset {width:275px;  height:300px;}
+#contact .table-wrapper .table-cell-box .contact-box form#contact-form fieldset .input-box {width:275px;  height:260px;  padding:15px;  margin-bottom:10px;  background:#dae8f6;}
+#contact .table-wrapper .table-cell-box .contact-box form#contact-form fieldset .input-box input {width:245px;  height:35px;  padding-left:10px;  margin-bottom:5px;  border-top:3px solid #bbb;  font-size:14px;  color:#555;  font-family:'Nanum Gothic';  transition:all 0.4s;}
+#contact .table-wrapper .table-cell-box .contact-box form#contact-form fieldset .input-box input:focus {border-color:#62a5ff;}
+#contact .table-wrapper .table-cell-box .contact-box form#contact-form fieldset .input-box textarea {width:245px;  height:70px;  padding:10px;  border-top:3px solid #bbb;  font-size:14px;  color:#555;  font-family:'Nanum Gothic';  transition:all 0.4s;}
+#contact .table-wrapper .table-cell-box .contact-box form#contact-form fieldset .input-box textarea:focus {border-color:#62a5ff;}
+#contact .table-wrapper .table-cell-box .contact-box form#contact-form fieldset input#submit-btn {float:right;  width:100px;  height:30px;  text-align:center;  line-height:30px;  font-size:13px;  color:#999;  letter-spacing:3px;  background:url(../img/contact-send.png) no-repeat right bottom;  cursor:pointer;  transition:all 0.4s;}
+#contact .table-wrapper .table-cell-box .contact-box form#contact-form fieldset input#submit-btn:hover {color:#333;  background-image: url(../img/contact-send-hover.png);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
